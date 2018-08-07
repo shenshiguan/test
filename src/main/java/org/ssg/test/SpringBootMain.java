@@ -9,7 +9,6 @@ public class SpringBootMain extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-
 		return builder.sources(SpringBootMain.class);
 	}
 }
