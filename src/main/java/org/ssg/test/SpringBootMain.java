@@ -1,5 +1,6 @@
 package org.ssg.test;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.server.ConfigurableWebServerFactory;
@@ -18,8 +19,11 @@ public class SpringBootMain extends SpringBootServletInitializer implements WebS
 	@Override
 	public void customize(ConfigurableWebServerFactory factory) {
 		//2.0 更改嵌入式容器端口  然并卵
-		factory.setPort(8081);
+		factory.setPort(8086);
 	}
 	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootMain.class,args);
+	}
 	
 }
