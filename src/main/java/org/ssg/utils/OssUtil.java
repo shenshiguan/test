@@ -1,4 +1,4 @@
-package filetools.check;
+package org.ssg.utils;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;

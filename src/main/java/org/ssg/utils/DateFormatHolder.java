@@ -1,4 +1,4 @@
-package filetools.check;
+package org.ssg.utils;
 
 import java.lang.ref.SoftReference;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package filetools.check;
+package org.ssg.utils;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;
