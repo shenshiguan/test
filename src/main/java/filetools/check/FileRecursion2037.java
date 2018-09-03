@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
+import org.ssg.utils.OssUtil;
 
 import filetools.log.LogOut;
 import filetools.log.LogOut2;

@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.ssg.utils.OssUtil;
+
 import com.alibaba.dubbo.common.utils.StringUtils;
 
 import filetools.log.LogOut;

@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import filetools.log.LogOut;
 
-
 /***
  * 查询所有文件夹下 文件的数量 是否是2
  * 
@@ -17,8 +16,9 @@ public class FileFindAll {
 	static long count = 0;
 
 	static String DIRECTORY = "";
+
 	public static void main(String[] args) {
-//		String filePath = "E:/已核对历年真题/华南理工大学/城市规划设计（做图）2005/信号与系统-2005/";
+		// String filePath = "E:/已核对历年真题/华南理工大学/城市规划设计（做图）2005/信号与系统-2005/";
 		String filePath = "F:/已核对历年真题/";
 		File file = new File(filePath);
 		if (file != null) {
@@ -32,33 +32,32 @@ public class FileFindAll {
 		}
 	}
 
-	public static void recursionDirectory(File file_1){
+	public static void recursionDirectory(File file_1) {
 		try {
-			if(file_1.isDirectory()){
+			if (file_1.isDirectory()) {
 				File[] files = file_1.listFiles();
-//				if(files.length ==0){
-//					System.out.println(file_1.getAbsolutePath());
-//					count++;
-//				}
-				for(File file :files){
+				// if(files.length ==0){
+				// System.out.println(file_1.getAbsolutePath());
+				// count++;
+				// }
+				for (File file : files) {
 					recursionDirectory(file);
 				}
-			}else{
-				if(file_1.getName().endsWith(".rar")){
+			} else {
+				if (file_1.getName().endsWith(".rar")) {
 					count++;
 					System.out.println(file_1.getAbsolutePath());
 					logout.fileChaseFW(file_1.getAbsolutePath());
-				}else{
-//					count++;
-//					System.out.println("=====>"+file_1.getAbsolutePath());
-//					logout.fileChaseFW("=====>"+file_1.getAbsolutePath());
+				} else {
+					// count++;
+					// System.out.println("=====>"+file_1.getAbsolutePath());
+					// logout.fileChaseFW("=====>"+file_1.getAbsolutePath());
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-//			System.exit(0);
+			// System.exit(0);
 		}
 	}
-	
 
 }

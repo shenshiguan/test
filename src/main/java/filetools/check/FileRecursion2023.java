@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.UUID;
 
+import org.ssg.utils.OssUtil;
+
 import filetools.log.LogOut;
 
 /***

@@ -10,6 +10,8 @@ import java.io.OutputStream;
 import javax.media.jai.JAI;
 import javax.media.jai.RenderedOp;
 
+import org.ssg.utils.OssUtil;
+
 import com.sun.media.jai.codec.ImageCodec;
 import com.sun.media.jai.codec.ImageEncoder;
 import com.sun.media.jai.codec.JPEGEncodeParam;
