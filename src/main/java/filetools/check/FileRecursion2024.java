@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.ssg.utils.OssUtil;
+
 import filetools.log.LogOut;
 
 /***
@@ -179,8 +181,7 @@ public class FileRecursion2024 {
 			String filePath = file_1.getAbsolutePath();
 			String filePath1 = filePath.replaceAll(".docx", ".pdf").replaceAll(".doc", ".pdf");
 			System.out.println(filePath);
-			System.out.println(filePath1);
-			
+			System.out.println(filePath1);	
 			File ff = new File(filePath1);
 			if(!ff.exists()){
 				boolean res = WordConvertPdf.wordToPDF(filePath, filePath1);
@@ -189,6 +190,5 @@ public class FileRecursion2024 {
 				
 			}
 		}
-
 	}	
 }

@@ -113,9 +113,12 @@ public class PrintToPdfUtil {
     }
     
 
+    public static void main(String[] args) {
+    	toPdf("C:/20180816/", "C:/20180816/111111111.pdf");
+	}
    
     
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        long time1 = System.currentTimeMillis();
 //        System.out.println("========================");
 ////      toPdf("E:/已核对历年真题/河海大学/俄语（二外）2005/", "E:/已核对历年真题/河海大学/俄语（二外）2005/俄语（二外）2005.pdf");
@@ -125,6 +128,6 @@ public class PrintToPdfUtil {
 //        long time2 = System.currentTimeMillis();
 //        int time = (int) ((time2 - time1)/1000);
 //        System.out.println("执行了："+time+"秒！");
-    }
+//    }
     
 }

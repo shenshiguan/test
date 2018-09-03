@@ -23,6 +23,9 @@ public class TiffUtilTools {
 	}
 	
 	public static void doitJAI(String file,String fileDirectory) throws IOException {
+		System.out.println(file);
+		System.out.println(fileDirectory);
+		
 		FileSeekableStream ss = new FileSeekableStream(file);
 		TIFFDecodeParam param0 = null;
 		TIFFEncodeParam param = new TIFFEncodeParam();
